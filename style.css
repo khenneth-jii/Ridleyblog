@@ -1,0 +1,264 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f6fb;
+    color: #253247;
+    line-height: 1.8;
+}
+
+/* Navigation */
+nav {
+    background: #101d35;
+    padding: 18px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #42d9e8;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 22px;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: #42d9e8;
+}
+
+/* Hero section */
+.hero {
+    background: linear-gradient(135deg, #101d35, #123e63);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero .tag {
+    color: #42d9e8;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.hero h1 {
+    font-size: 45px;
+    max-width: 850px;
+    margin: 20px auto;
+    line-height: 1.2;
+}
+
+.hero p {
+    color: #d0dfed;
+    max-width: 650px;
+    margin: 15px auto;
+    font-size: 17px;
+}
+
+.hero .date {
+    color: #9eb5ca;
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+/* Main content */
+.container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 25px;
+}
+
+.article {
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(20, 40, 70, 0.06);
+}
+
+.article h2 {
+    color: #123e63;
+    font-size: 27px;
+    margin-top: 45px;
+    margin-bottom: 15px;
+    border-left: 4px solid #22b8ca;
+    padding-left: 15px;
+}
+
+.article h3 {
+    color: #176b83;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+.article p {
+    margin-bottom: 18px;
+    text-align: justify;
+}
+
+.article ul {
+    margin: 15px 0 25px 25px;
+}
+
+.article li {
+    margin-bottom: 10px;
+}
+
+/* Highlight box */
+.highlight {
+    background: #eaf8fb;
+    border-left: 4px solid #22b8ca;
+    padding: 22px;
+    margin: 25px 0;
+    border-radius: 5px;
+}
+
+.highlight strong {
+    color: #123e63;
+}
+
+/* Skills cards */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+    margin: 25px 0;
+}
+
+.skill-card {
+    background: #f1f7fc;
+    border: 1px solid #dceaf3;
+    padding: 22px;
+    border-radius: 9px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(20, 60, 90, 0.1);
+}
+
+.skill-card h3 {
+    color: #12647c;
+    margin-top: 0;
+}
+
+.skill-card p {
+    margin-bottom: 0;
+    text-align: left;
+}
+
+/* Conclusion */
+.conclusion {
+    background: #101d35;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+.conclusion h2 {
+    color: #42d9e8;
+    margin-top: 0;
+    border: none;
+    padding: 0;
+}
+
+.conclusion p {
+    color: #e0eaf4;
+}
+
+/* References */
+.references {
+    background: #f5f8fc;
+    padding: 25px;
+    border-radius: 8px;
+    margin-top: 40px;
+    overflow-wrap: anywhere;
+}
+
+.references h2 {
+    margin-top: 0;
+}
+
+.references p {
+    font-size: 14px;
+    text-align: left;
+    padding-left: 25px;
+    text-indent: -25px;
+}
+
+.references a {
+    color: #126b91;
+    word-break: break-word;
+}
+
+/* Footer */
+footer {
+    background: #101d35;
+    text-align: center;
+    color: #b8c9d9;
+    padding: 30px 15px;
+    font-size: 13px;
+}
+
+footer span {
+    color: #42d9e8;
+}
+
+/* Mobile responsive design */
+@media (max-width: 700px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .nav-links a {
+        margin: 0;
+        font-size: 12px;
+    }
+
+    .hero {
+        padding: 70px 20px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .article {
+        padding: 25px 20px;
+    }
+
+    .article h2 {
+        font-size: 23px;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+}
